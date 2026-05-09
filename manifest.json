@@ -5,7 +5,7 @@
   "versions": [
     {
       "commit": "83fd0864be7289067ce96cc79cd96c0928742979",
-      "parsed_at": "2026-04-23T11:12:19.331318+00:00",
+      "parsed_at": "2026-05-09T22:11:08.276359+00:00",
       "tag": "v0.2.1",
       "filetree": "filetree/83fd0864be7289067ce96cc79cd96c0928742979.nq.gz",
       "blobs": [
