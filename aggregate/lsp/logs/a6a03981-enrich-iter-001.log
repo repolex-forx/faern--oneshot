@@ -1,0 +1,17 @@
+[2026-05-10T09:41:58Z] === ENRICH ITERATION 1 START | repo=faern/oneshot sha=a6a03981 ===
+[2026-05-10T09:41:58Z] [iter=1] PHASE START: enrich repo=faern/oneshot sha=a6a03981 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/a6a03981-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/a6a03981ec4d9aa3abb4445f0b90919d08a746ad.nq.gz
+[2026-05-10T09:42:01Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=79 MB
+[2026-05-10T09:42:01Z] [iter=1] AST store loaded triples=7900 load_secs=0 mem_mb=99 MB
+[2026-05-10T09:42:01Z] [iter=1] Step 2: Finding LSP targets mem_mb=99 MB
+[2026-05-10T09:42:01Z] [iter=1] LSP targets found call_sites=88 imports=15 extends=0 implements=0 secs=0
+[2026-05-10T09:42:01Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=99 MB
+[2026-05-10T09:42:01Z] [iter=1] Position index built positions=513 nodes_with_types=662 secs=0 mem_mb=99 MB
+[2026-05-10T09:42:01Z] [iter=1] Step 3: Starting LSP resolution mem_mb=99 MB already_completed_types=[] already_completed_files=0
+[2026-05-10T09:42:01Z] [iter=1] Resolving target type target_type=call_site count=88
+[2026-05-10T09:42:34Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=0.6 files_done=1 resolved=3 errors=2 current=examples/recv_before_send.rs
+[2026-05-10T09:42:34Z] [iter=1] Target type resolved target_type=call_site resolved=66 errors=22 secs=34 mem_mb=99 MB
+[2026-05-10T09:42:34Z] [iter=1] Resolving target type target_type=import_statement count=15
+[2026-05-10T09:42:46Z] [iter=1] Target type resolved target_type=import_statement resolved=15 errors=0 secs=12 mem_mb=99 MB
+[2026-05-10T09:42:58Z] [iter=1] Step 5: Writing final enrichment file triples=867
+[2026-05-10T09:42:58Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/a6a03981ec4d9aa3abb4445f0b90919d08a746ad.nq.gz size_kb=8
+[2026-05-10T09:42:58Z] [iter=1] PHASE END: enrich elapsed_s=61 elapsed_min=1.0 total_triples=867
